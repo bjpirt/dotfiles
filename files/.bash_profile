@@ -48,6 +48,9 @@ alias rta='rake test:all'
 alias gca='git commit -a'
 alias rdr='rake db:rebuild'
 alias gpo='git push origin'
+alias b='bundle exec'
+alias r='rake'
+alias br='bundle exec rake'
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc

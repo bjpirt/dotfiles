@@ -51,6 +51,7 @@ alias gpo='git push origin'
 alias b='bundle exec'
 alias r='rake'
 alias br='bundle exec rake'
+alias bi='bundle install'
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc

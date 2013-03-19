@@ -64,3 +64,4 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
+export RBENV_ROOT=/etc/rbenv

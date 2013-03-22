@@ -1,0 +1,12 @@
+#!/bin/bash
+
+host=`facter fqdn`
+if [[ ! -n "$1" ]]; then
+  port=8000
+else
+  port=$1
+fi
+
+echo "http://$host:$port"
+
+python -m SimpleHTTPServer $port

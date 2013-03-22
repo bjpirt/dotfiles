@@ -65,3 +65,5 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export RBENV_ROOT=/etc/rbenv
+
+export PATH=$PATH:~/.bin

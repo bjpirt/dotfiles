@@ -47,7 +47,7 @@ alias gpb='git push bjpirt'
 alias gfu='git fetch upstream'
 alias gr='git rebase upstream/develop develop'
 alias gd='git diff'
-alias gx='git fetch upstream && git rebase upstream/develop develop'
+alias gx='git fetch upstream && git rebase upstream/master master'
 
 alias ll='ls -al'
 alias n='nano'

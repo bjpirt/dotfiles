@@ -5,6 +5,7 @@ set nofoldenable
 set tabstop=2
 set expandtab
 set shiftwidth=2
+set nospell
 
 " Show trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red

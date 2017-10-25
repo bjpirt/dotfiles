@@ -1,12 +1,12 @@
-#!/usr/bin/ruby
+#!/bin/bash
 
-current_dir = File.expand_path(File.dirname(__FILE__))
-files_dir = File.join(current_dir, "files")
-
-files = Dir[File.join(files_dir, "*")] + Dir[File.join(files_dir, ".[^\.]*")]
-files.each do |file|
-  command = "ln -sfF #{file} $HOME/."
-  puts command
-  `#{command}`
-end
-
+PWD=`pwd`
+for file in `ls -a ./files/`;
+do
+  if [ "$file" != "." ] && [ "$file" != ".." ]; then
+    fileloc="$PWD/files/$file"
+    cmd="ln -sfF $fileloc $HOME/."
+    echo $cmd
+    $cmd
+  fi
+done

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+clear
+eval $@
+res=$?
+height=`tput lines`
+width=`tput cols`
+
+success=$(printf " Success%.0s" $(seq 1 $width) | cut -c 1-$width)
+fail=$(printf " Fail%.0s" $(seq 1 $width) | cut -c 1-$width)
+
+echo -e "\033[97m"
+clear
+for i in $(seq 1 $height); do
+  if [ $res == 0 ]
+  then
+    printf "\033[42m"
+    echo -e "$success\033[49m"
+  elif [ $res == 1 ]
+  then
+    printf "\033[41m"
+    echo -e "$fail\033[49m"
+  fi
+done
+
+printf "\033[49m"

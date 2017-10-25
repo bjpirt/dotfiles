@@ -1,0 +1,4 @@
+#!/usr/bin/env bash 
+
+eval $@
+/usr/bin/osascript -e "display notification \"Script finished: $@\""

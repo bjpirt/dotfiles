@@ -59,6 +59,7 @@ alias b='bundle exec'
 alias r='rake'
 alias br='bundle exec rake'
 alias bi='bundle install'
+alias gps='ps aux | grep'
 
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc

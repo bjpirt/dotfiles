@@ -1,0 +1,8 @@
+#!/usr/bin/env sh 
+
+while [ 1 ]
+do
+  eval $@
+  printf "\033[30m"
+  read -p "Press a key to continue" -n1 -s
+done

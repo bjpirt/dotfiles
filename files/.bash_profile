@@ -64,6 +64,6 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-export RBENV_ROOT=/etc/rbenv
+export PATH=/usr/local/bin:~/.bin:~/.rbenv/bin:/usr/local/sbin:$PATH
 
-export PATH=$PATH:~/.bin
+eval "$(rbenv init -)"

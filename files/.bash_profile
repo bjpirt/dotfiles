@@ -65,6 +65,12 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-export PATH=/usr/local/bin:~/.bin:~/.rbenv/bin:/usr/local/sbin:$PATH
+PATH=/usr/local/opt/python/libexec/bin:/usr/local/bin:~/.bin:~/.rbenv/bin:/usr/local/sbin:/Library/Frameworks/GDAL.framework/Versions/Current/Programs:node_modules/.bin:$PATH
 
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Setting PATH for Python 3.6
+# The original version is saved in .bash_profile.pysave
+export PATH

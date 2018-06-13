@@ -7,5 +7,5 @@ else
 fi
 
 echo "http://localhost:$port"
-
-python -m SimpleHTTPServer $port
+python -m http.server $port
+#python2 -m SimpleHTTPServer $port

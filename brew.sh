@@ -37,7 +37,8 @@ VSCODE_EXTENSIONS=(\
     "vscjava.vscode-java-dependency" \
     "vscjava.vscode-java-pack" \
     "vscjava.vscode-java-test" \
-    "vscjava.vscode-maven" 
+    "vscjava.vscode-maven" \
+    "dbaeumer.vscode-eslint"
 )
 
 echo $EXISTING_EXTENSIONS

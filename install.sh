@@ -14,3 +14,5 @@ echo $(dirname "$0")
 
 ln -sf "$PWD/settings/vscode/settings.json" "$HOME/Library/Application Support/Code/User/"
 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+

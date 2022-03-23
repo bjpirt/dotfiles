@@ -3,20 +3,16 @@
   "explorer.confirmDragAndDrop": false,
   "editor.tabSize": 2,
   "editor.renderControlCharacters": false,
-  "prettier.disableLanguages": [".net"],
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
   },
   "debug.javascript.suggestPrettyPrinting": false,
   "keyboard.touchbar.enabled": false,
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "pdf.preview"
   },
   "terminal.integrated.tabs.enabled": true,
@@ -24,11 +20,7 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
   "timeline.excludeSources": [],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "files.exclude": {
@@ -38,5 +30,7 @@
     "**/.factorypath": true
   },
   "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true
+  "files.trimFinalNewlines": true,
+  "java.import.gradle.java.home": "/opt/homebrew/Cellar/openjdk@11/11.0.12/libexec/openjdk.jdk/Contents/Home",
+  "terminal.integrated.scrollback": 10000
 }

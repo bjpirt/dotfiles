@@ -50,3 +50,5 @@
         user = bjpirt
 [gist]
         private = yes
+[pull]
+	rebase = true

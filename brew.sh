@@ -14,7 +14,11 @@ $BREW_CMD install --cask docker
 $BREW_CMD install --cask spotify
 $BREW_CMD install --cask bbedit
 $BREW_CMD install --cask bitwarden
+$BREW_CMD install --cask slack
 $BREW_CMD install --cask authy
+$BREW_CMD install --cask tableplus
+$BREW_CMD install --cask aws-vpn-client
+$BREW_CMD install --cask tunnelblick
 $BREW_CMD install --cask visual-studio-code
 ln -sf "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code" /usr/local/bin/code
 
@@ -38,7 +42,10 @@ VSCODE_EXTENSIONS=(\
     "vscjava.vscode-java-pack" \
     "vscjava.vscode-java-test" \
     "vscjava.vscode-maven" \
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint" \
+    "oderwat.indent-rainbow" \
+    "2gua.rainbow-brackets" \
+    "eamodio.gitlens"
 )
 
 echo $EXISTING_EXTENSIONS
@@ -52,7 +59,13 @@ $BREW_CMD install --cask firefox
 $BREW_CMD install nvm
 mkdir -p ~/.nvm
 
-# Add the following to ~/.zshrc or your desired shell configuration file:
-#   export NVM_DIR="$HOME/.nvm"
-#   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-#   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+brew install java
+brew install java11
+brew install awscli
+brew install jq
+brew install aws-vault
+brew install wget
+brew install socat
+brew install xquartz
+brew install rbenv
+brew install libpq
